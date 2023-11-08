@@ -1,2 +1,9 @@
-package com.stevenyucodes.studentsystem.repository;public class StudentRepository {
+package com.stevenyucodes.studentsystem.repository;
+
+import com.stevenyucodes.studentsystem.model.student;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface StudentRepository extends JpaRepository<student, Integer> {
 }
